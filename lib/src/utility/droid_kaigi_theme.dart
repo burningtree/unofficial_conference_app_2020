@@ -102,54 +102,54 @@ ThemeData get droidKaigiDarkTheme {
 
 // ref: https://material.io/develop/android/theming/typography/
 TextTheme droidKaigiTextTheme({bool isDark = false}) {
-  return GoogleFonts.notoSansJPTextTheme(
+  return GoogleFonts.notoSansTextTheme(
     TextTheme(
-      title: TextStyle(
+      headline6: TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: 20,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      subtitle: TextStyle(
+      subtitle2: TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: 14,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.indigo900,
       ),
-      headline: TextStyle(
+      headline5: TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: 24,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      subhead: TextStyle(
+      subtitle1: TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: 16,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      body1: TextStyle(
+      bodyText1: TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: 16,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      body2: TextStyle(
+      bodyText2: TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: 14,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      display1: TextStyle(
+      headline4: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 34,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      display2: TextStyle(
+      headline3: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 48,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,
       ),
-      display3: TextStyle(
+      headline2: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 60,
         color: DroidKaigiColors.blackAlpha87,
       ),
-      display4: TextStyle(
+      headline1: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 96,
         color: isDark ? DroidKaigiColors.white : DroidKaigiColors.blackAlpha87,

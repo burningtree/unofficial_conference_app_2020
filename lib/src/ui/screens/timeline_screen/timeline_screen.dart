@@ -40,7 +40,7 @@ class TimelineScreen<T> extends StatelessWidget {
                   'Filter',
                   style: Theme.of(context)
                       .textTheme
-                      .headline
+                      .headline5
                       .copyWith(color: Theme.of(context).colorScheme.onPrimary),
                 ),
                 FlatButton.icon(
@@ -51,7 +51,7 @@ class TimelineScreen<T> extends StatelessWidget {
                   ),
                   label: Text(
                     Strings.of(context).reset,
-                    style: Theme.of(context).textTheme.subtitle.copyWith(
+                    style: Theme.of(context).textTheme.subtitle2.copyWith(
                         color: Theme.of(context).colorScheme.onPrimary),
                   ),
                   onPressed: () {
@@ -65,7 +65,7 @@ class TimelineScreen<T> extends StatelessWidget {
               'Room',
               style: Theme.of(context)
                   .textTheme
-                  .body1
+                  .bodyText1
                   .copyWith(color: Theme.of(context).colorScheme.onPrimary),
             ),
             const SizedBox(height: 10),
@@ -105,7 +105,7 @@ class TimelineScreen<T> extends StatelessWidget {
               'Language',
               style: Theme.of(context)
                   .textTheme
-                  .body1
+                  .bodyText1
                   .copyWith(color: Theme.of(context).colorScheme.onPrimary),
             ),
             const SizedBox(height: 10),
@@ -145,7 +145,7 @@ class TimelineScreen<T> extends StatelessWidget {
               'Category',
               style: Theme.of(context)
                   .textTheme
-                  .body1
+                  .bodyText1
                   .copyWith(color: Theme.of(context).colorScheme.onPrimary),
             ),
             const SizedBox(height: 10),
@@ -212,12 +212,12 @@ class TimelineScreen<T> extends StatelessWidget {
                         return Text(
                           '${Strings.of(context).targetSession} : '
                           '${snapshot.data}',
-                          style: Theme.of(context).textTheme.subtitle,
+                          style: Theme.of(context).textTheme.subtitle2,
                         );
                       } else {
                         return Text(
                           '${Strings.of(context).targetSession} : ',
-                          style: Theme.of(context).textTheme.subtitle,
+                          style: Theme.of(context).textTheme.subtitle2,
                         );
                       }
                     },
@@ -234,7 +234,7 @@ class TimelineScreen<T> extends StatelessWidget {
                     ),
                     label: Text(
                       Strings.of(context).filter,
-                      style: Theme.of(context).textTheme.subtitle,
+                      style: Theme.of(context).textTheme.subtitle2,
                     ),
                   ),
                 ],

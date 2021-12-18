@@ -24,7 +24,7 @@ class SpeakerItem extends StatelessWidget {
             const SizedBox(width: 10),
             Text(
               speaker.name,
-              style: Theme.of(context).textTheme.body1,
+              style: Theme.of(context).textTheme.bodyText1,
             ),
           ],
         ),

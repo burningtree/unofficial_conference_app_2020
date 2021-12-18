@@ -1,7 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefUtils {
-  static Future<bool> setBool(String key,
+ /* static Future<bool> setBool(String key,
       {bool value, SharedPreferences prefs}) async {
     return (prefs ?? await SharedPreferences.getInstance()).setBool(key, value);
   }
@@ -9,7 +9,7 @@ class PrefUtils {
   static Future<bool> getBool(
     String key, {
     SharedPreferences prefs,
-    bool def = false,
+    Future<bool> def = false,
   }) async {
     try {
       return (prefs ?? await SharedPreferences.getInstance()).getBool(key) ??
@@ -17,5 +17,5 @@ class PrefUtils {
     } on Exception catch (_) {
       return def;
     }
-  }
+  }*/
 }

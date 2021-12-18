@@ -25,13 +25,14 @@ class ThemeBloc {
 
   void _initTheme() async {
     _selectTheme =
-        (await Preferences.isDarkMode ? ThemeMode.dark : ThemeMode.light);
+        //(await Preferences.isDarkMode ? ThemeMode.dark : ThemeMode.light);
+        ThemeMode.light;
     _themeSubject.sink.add(_selectTheme);
   }
 
   void changeTheme(bool selectDark) {
     _selectTheme = selectDark ? ThemeMode.dark : ThemeMode.light;
-    Preferences.isDarkMode = selectDark;
+    //Preferences.isDarkMode = selectDark;
     _themeSubject.sink.add(_selectTheme);
   }
 }

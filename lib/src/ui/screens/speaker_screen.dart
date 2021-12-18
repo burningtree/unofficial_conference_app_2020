@@ -69,12 +69,12 @@ class SpeakerScreen extends StatelessWidget {
                   const SizedBox(height: 15),
                   Text(
                     speaker.name,
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   const SizedBox(height: 10),
                   Text(
                     speaker.tagLine,
-                    style: Theme.of(context).textTheme.subtitle,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ],
               ),
@@ -87,7 +87,7 @@ class SpeakerScreen extends StatelessWidget {
           Center(
             child: Text(
               speaker.bio,
-              style: Theme.of(context).textTheme.body1,
+              style: Theme.of(context).textTheme.bodyText1,
             ),
           ),
           const Divider(
@@ -98,7 +98,7 @@ class SpeakerScreen extends StatelessWidget {
             Strings.of(context).timeline,
             style: Theme.of(context)
                 .textTheme
-                .body1
+                .bodyText1
                 .copyWith(color: Theme.of(context).colorScheme.primary),
           ),
           _buildSpeakerSession(context),
@@ -150,7 +150,7 @@ class SpeakerScreen extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   session.title,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 const SizedBox(height: 4),
                 Row(
@@ -165,7 +165,7 @@ class SpeakerScreen extends StatelessWidget {
                     const SizedBox(width: 5),
                     Text(
                       session.sessionTimeSpan(),
-                      style: Theme.of(context).textTheme.body2.copyWith(
+                      style: Theme.of(context).textTheme.bodyText2.copyWith(
                             color: bloc.isDark
                                 ? Theme.of(context).colorScheme.onBackground
                                 : Theme.of(context).colorScheme.primary,

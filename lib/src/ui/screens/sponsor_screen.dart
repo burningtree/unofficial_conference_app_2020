@@ -24,7 +24,7 @@ class SponsorScreen extends StatelessWidget {
       elevation: 0,
       title: Text(
         Strings.of(context).sponsors,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }
@@ -102,7 +102,7 @@ class SponsorScreen extends StatelessWidget {
             delegate: SliverChildListDelegate([
               Text(
                 'PLATINUM SPONSORS',
-                style: Theme.of(context).textTheme.headline,
+                style: Theme.of(context).textTheme.headline5,
               ),
               const SizedBox(height: 10),
             ]),
@@ -118,7 +118,7 @@ class SponsorScreen extends StatelessWidget {
                 const Divider(thickness: 1, height: 30),
                 Text(
                   'GOLD SPONSORS',
-                  style: Theme.of(context).textTheme.headline,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 const SizedBox(height: 10),
               ],
@@ -137,7 +137,7 @@ class SponsorScreen extends StatelessWidget {
                 const Divider(thickness: 1, height: 30),
                 Text(
                   'SPONSORS',
-                  style: Theme.of(context).textTheme.headline,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 const SizedBox(height: 10),
               ],
@@ -156,7 +156,7 @@ class SponsorScreen extends StatelessWidget {
                 const Divider(thickness: 1, height: 30),
                 Text(
                   'TECHNICAL SUPPORT FOR NETWORK',
-                  style: Theme.of(context).textTheme.headline,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 const SizedBox(height: 10),
               ],

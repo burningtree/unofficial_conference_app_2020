@@ -109,7 +109,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).timeline,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -128,7 +128,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).about,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -146,7 +146,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).announcement,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -164,7 +164,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).floorMap,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -183,7 +183,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).sponsors,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -201,7 +201,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).contributors,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -219,7 +219,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).settings,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],
@@ -237,7 +237,7 @@ class Main extends StatelessWidget {
             ),
             title: Text(
               Strings.of(context).allQuestionnaire,
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText2.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.indigo200
                         : Colors.grey[600],

@@ -25,7 +25,7 @@ class TimelineMyPlanScreen extends TimelineScreen<TimelineMyPlanScreenBloc> {
               'お気に入りのセッションを登録するとあなた専用のプランを作ることができます。',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle
+                  .subtitle2
                   .copyWith(fontWeight: FontWeight.w600),
               textAlign: TextAlign.center,
             ),

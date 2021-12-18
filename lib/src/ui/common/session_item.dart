@@ -48,7 +48,7 @@ class SessionItem extends StatelessWidget {
                       flex: 2,
                       child: Text(
                         session.startHourMinute(),
-                        style: Theme.of(context).textTheme.body1.copyWith(
+                        style: Theme.of(context).textTheme.bodyText1.copyWith(
                             color: bloc.isDark
                                 ? DroidKaigiColors.white
                                 : DroidKaigiColors.blackAlpha38),
@@ -71,7 +71,7 @@ class SessionItem extends StatelessWidget {
                     Text(session.title,
                         style: Theme.of(context)
                             .textTheme
-                            .title
+                            .headline6
                             .copyWith(fontWeight: FontWeight.w600)),
                     const SizedBox(height: 10),
                     Column(

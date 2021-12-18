@@ -45,7 +45,7 @@ class SessionScreen extends StatelessWidget {
         children: <Widget>[
           Text(
             session.title,
-            style: Theme.of(context).textTheme.headline.copyWith(
+            style: Theme.of(context).textTheme.headline5.copyWith(
                 fontSize: 28,
                 color: (bloc.isDark
                     ? Theme.of(context).colorScheme.onPrimary
@@ -62,7 +62,7 @@ class SessionScreen extends StatelessWidget {
               const SizedBox(width: 5),
               Text(
                 session.sessionTimeSpan(),
-                style: Theme.of(context).textTheme.subtitle,
+                style: Theme.of(context).textTheme.subtitle2,
               ),
             ],
           ),
@@ -86,7 +86,7 @@ class SessionScreen extends StatelessWidget {
               trimMode: TrimMode.line,
               trimCollapsedText: ' ${Strings.of(context).readMore}',
               trimExpandedText: '',
-              style: Theme.of(context).textTheme.body1,
+              style: Theme.of(context).textTheme.bodyText1,
             ),
           ),
           const Divider(
@@ -95,7 +95,7 @@ class SessionScreen extends StatelessWidget {
           ),
           Text(
             Strings.of(context).targetAudience,
-            style: Theme.of(context).textTheme.body1.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontWeight: FontWeight.w600,
                   color: bloc.isDark
                       ? Theme.of(context).colorScheme.onBackground
@@ -105,7 +105,7 @@ class SessionScreen extends StatelessWidget {
           const SizedBox(height: 18),
           Text(
             session.targetAudience,
-            style: Theme.of(context).textTheme.body1,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
           const Divider(
             thickness: 1,
@@ -113,7 +113,7 @@ class SessionScreen extends StatelessWidget {
           ),
           Text(
             Strings.of(context).speaker,
-            style: Theme.of(context).textTheme.body1.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontWeight: FontWeight.w600,
                   color: bloc.isDark
                       ? Theme.of(context).colorScheme.onBackground
@@ -129,7 +129,7 @@ class SessionScreen extends StatelessWidget {
           ),
           Text(
             Strings.of(context).document,
-            style: Theme.of(context).textTheme.body1.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontWeight: FontWeight.w600,
                   color: bloc.isDark
                       ? Theme.of(context).colorScheme.onBackground
@@ -153,7 +153,7 @@ class SessionScreen extends StatelessWidget {
                       const SizedBox(width: 8),
                       Text(
                         Strings.of(context).movie,
-                        style: Theme.of(context).textTheme.body1.copyWith(
+                        style: Theme.of(context).textTheme.bodyText1.copyWith(
                             color: Theme.of(context).colorScheme.onBackground),
                       ),
                     ],
@@ -173,7 +173,7 @@ class SessionScreen extends StatelessWidget {
                       const SizedBox(width: 8),
                       Text(
                         Strings.of(context).slide,
-                        style: Theme.of(context).textTheme.body1.copyWith(
+                        style: Theme.of(context).textTheme.bodyText1.copyWith(
                             color: Theme.of(context).colorScheme.onBackground),
                       ),
                     ],
@@ -202,7 +202,7 @@ class SessionScreen extends StatelessWidget {
           padding: const EdgeInsets.all(7),
           child: Text(
             session.category.name,
-            style: Theme.of(context).textTheme.body2.copyWith(
+            style: Theme.of(context).textTheme.bodyText2.copyWith(
                   color: bloc.isDark
                       ? Theme.of(context).colorScheme.onBackground
                       : Theme.of(context).colorScheme.primary,
@@ -222,7 +222,7 @@ class SessionScreen extends StatelessWidget {
           padding: const EdgeInsets.all(7),
           child: Text(
             session.language.rawValue,
-            style: Theme.of(context).textTheme.body2.copyWith(
+            style: Theme.of(context).textTheme.bodyText2.copyWith(
                   color: bloc.isDark
                       ? Theme.of(context).colorScheme.onBackground
                       : Theme.of(context).colorScheme.primary,

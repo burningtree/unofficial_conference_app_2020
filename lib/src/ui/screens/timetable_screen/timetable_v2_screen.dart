@@ -19,7 +19,7 @@ class TimetableV2Screen extends StatelessWidget {
           'Timetable V2',
           style: Theme.of(context)
               .textTheme
-              .title
+              .headline6
               .copyWith(color: Theme.of(context).colorScheme.onPrimary),
         ),
       ),
@@ -85,7 +85,7 @@ class TimetableV2Screen extends StatelessWidget {
           backgroundColor: bloc.isDark
               ? DroidKaigiColors.lightBlue300
               : Colors.lightBlue[100],
-          textStyle: Theme.of(context).textTheme.body2.copyWith(
+          textStyle: Theme.of(context).textTheme.bodyText2.copyWith(
                 color: bloc.isDark
                     ? Theme.of(context).colorScheme.onBackground
                     : Theme.of(context).colorScheme.primary,
@@ -111,7 +111,7 @@ class TimetableV2Screen extends StatelessWidget {
           lane: Lane(
             name: room.name,
             backgroundColor: Theme.of(context).colorScheme.background,
-            textStyle: Theme.of(context).textTheme.subtitle,
+            textStyle: Theme.of(context).textTheme.subtitle2,
           ),
           events: tableEvents,
         ),

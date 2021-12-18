@@ -6,9 +6,9 @@ class Preferences {
   static const fIsDarkMode = 'isDarkMode';
 
   // isDarkMode
-  static set isDarkMode(bool value) =>
-      PrefUtils.setBool(fIsDarkMode, value: value);
+  //static set isDarkMode(Future<bool> value) =>
+  //    PrefUtils.setBool(fIsDarkMode, value: value);
 
   // ignore: getter_not_assignable_setter_types
-  static Future<bool> get isDarkMode async => PrefUtils.getBool(fIsDarkMode);
+  //static Future<bool> get isDarkMode async => PrefUtils.getBool(fIsDarkMode);
 }

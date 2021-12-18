@@ -24,7 +24,7 @@ class TimetableScreen extends StatelessWidget {
         Strings.of(context).timetable,
         style: Theme.of(context)
             .textTheme
-            .title
+            .headline6
             .copyWith(color: Theme.of(context).colorScheme.onPrimary),
       ),
       bottom: TabBar(

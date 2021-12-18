@@ -19,7 +19,7 @@ class FloorMapScreen extends StatelessWidget {
       elevation: 0,
       title: Text(
         Strings.of(context).floorMap,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }

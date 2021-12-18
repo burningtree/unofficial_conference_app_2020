@@ -24,7 +24,7 @@ class ContributorScreen extends StatelessWidget {
       elevation: 0,
       title: Text(
         Strings.of(context).contributors,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }

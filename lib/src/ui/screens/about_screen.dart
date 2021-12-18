@@ -24,7 +24,7 @@ class AboutScreen extends StatelessWidget {
       elevation: 0,
       title: Text(
         Strings.of(context).about,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }
@@ -49,7 +49,7 @@ class AboutScreen extends StatelessWidget {
             children: <Widget>[
               Text(
                 'What is DroidKaigi?',
-                style: Theme.of(context).textTheme.body1.copyWith(
+                style: Theme.of(context).textTheme.bodyText1.copyWith(
                     color: bloc.isDark
                         ? DroidKaigiColors.white
                         : DroidKaigiColors.indigo900),
@@ -61,7 +61,7 @@ class AboutScreen extends StatelessWidget {
                   'DroidKaigiはエンジニアが主役の\nAndroidカンファレンスです。\n'
                   'Android技術情報の共有とコミュニケーションを目的に、'
                   '2020年2月20日(木)、21日(金)の2日間開催します。',
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
               ),
               const SizedBox(height: 16),
@@ -106,7 +106,7 @@ class AboutScreen extends StatelessWidget {
               ListTile(
                 title: Text(
                   Strings.of(context).access,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 trailing: Icon(Icons.launch,
                     color: bloc.isDark
@@ -120,7 +120,7 @@ class AboutScreen extends StatelessWidget {
               ListTile(
                 title: Text(
                   Strings.of(context).staffList,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 onTap: () {
                   print('click');
@@ -130,7 +130,7 @@ class AboutScreen extends StatelessWidget {
               ListTile(
                 title: Text(
                   Strings.of(context).privacyPolicy,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 onTap: () {
                   print('click');
@@ -140,7 +140,7 @@ class AboutScreen extends StatelessWidget {
               ListTile(
                 title: Text(
                   Strings.of(context).license,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 onTap: () {
                   _showLicensePage(context);
@@ -150,11 +150,11 @@ class AboutScreen extends StatelessWidget {
               ListTile(
                 title: Text(
                   Strings.of(context).appVersion,
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 trailing: Text(
                   '1.2.0',
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 onTap: () {
                   print('click');

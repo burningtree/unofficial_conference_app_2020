@@ -22,7 +22,7 @@ class SessionCardItem extends StatelessWidget {
                 Text(
                   '${session.startHourMinute()} ~ '
                   '${session.endHourMinute()}',
-                  style: Theme.of(context).textTheme.title,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
               ],
             ),
@@ -66,7 +66,7 @@ class SessionCardItem extends StatelessWidget {
                     Container(
                       child: Text(
                         session.title,
-                        style: Theme.of(context).textTheme.title,
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -77,7 +77,7 @@ class SessionCardItem extends StatelessWidget {
                             : session.description),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 3,
-                        style: Theme.of(context).textTheme.body2,
+                        style: Theme.of(context).textTheme.bodyText2,
                       ),
                     ),
                     const SizedBox(height: 8),
